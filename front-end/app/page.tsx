@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Works from "@/components/Works";
 import Footer from "@/components/Footer";
+import JobList from "@/components/JobList";
 
 const navItems = [
   {
@@ -10,11 +11,11 @@ const navItems = [
   },
   {
     name: "About",
-    link: "/about",
+    link: "#about",
   },
   {
     name: "Contact",
-    link: "/contact",
+    link: "#contact",
   },
 ];
 
@@ -24,8 +25,10 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
+        <JobList />
         <Works />
         <Footer />
+
       </div>
     </main>
   );
